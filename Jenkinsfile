@@ -15,6 +15,7 @@ pipeline {
             }
         }
     }
+    stages {
         stage("Jar Publish") {
         steps {
             script {
@@ -41,4 +42,5 @@ pipeline {
         }   
     }   
 
+    }
 } 

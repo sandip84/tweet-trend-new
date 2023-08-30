@@ -14,8 +14,7 @@ pipeline {
                 sh 'mvn clean deploy'
             }
         }
-    }
-    stages {
+    
         stage("Jar Publish") {
         steps {
             script {
@@ -40,7 +39,8 @@ pipeline {
             
             }
         }   
+      }
     }   
 
-    }
+    
 } 

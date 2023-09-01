@@ -64,6 +64,14 @@ pipeline {
                 }
             }
         }
+
+        stage("Deployk8s") {
+            steps {
+                script {
+                  sh './deply.sh'
+                }
+            }
+        }
     }   
 
     

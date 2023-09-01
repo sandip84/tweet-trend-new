@@ -65,7 +65,7 @@ pipeline {
             }
         }
 
-        stage("Deployk8s") {
+        stage("Deploy-k8s") {
             steps {
                 script {
                   sh './deply.sh'
